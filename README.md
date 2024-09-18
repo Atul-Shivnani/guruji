@@ -34,8 +34,10 @@ The form features client-side validation, error handling, responsive design, and
 
 2. **Install Dependencies**
 
+   ```bash
     npm install
 
 3. **Start Development Server**
 
+   ```bash
     npm run dev
