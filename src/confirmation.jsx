@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Card from './components/card';
 import Heading from './components/heading';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Confirmation = () => {
   const [personalDetails, setPersonalDetails] = useState({
@@ -38,6 +39,13 @@ const Confirmation = () => {
     navigate("/step2");
   };
 
+  const handleSubmit = () => {
+axios.post("/submission",{data:{
+  userData: personalDetails,
+  addressData: addressDetails
+}})
+  }
+
   return (
     <Card>
       <Heading text="Confirmation" />
@@ -65,6 +73,7 @@ const Confirmation = () => {
             {"<Prev"}
           </button>
           <button
+          onClick={handleSubmit}
             type="button"
             className="bg-purple-200 p-2 rounded-xl border-2 border-purple-300 w-full md:w-1/2 transition-all ease-in-out delay-75 hover:bg-purple-300 shadow-xl hover:border-purple-400 hover:shadow-md"
           >
