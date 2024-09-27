@@ -5,6 +5,7 @@ import Address from "./address";
 import Dots from "./components/dots";
 import { useLocation, useNavigate } from "react-router-dom";
 import Confirmation from "./confirmation";
+import Success from "./success";
 
 function App() {
   const { pathname } = useLocation();
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<Personal />} />
         <Route path="/step2" element={<Address />} />
         <Route path="/step3" element={<Confirmation />} />
+        <Route path="/success" element={<Success />} />
       </Routes>
 
       <div className="fixed bottom-4 flex justify-center items-center gap-2 md:gap-6 lg:gap-8 max-w-full w-full px-4">

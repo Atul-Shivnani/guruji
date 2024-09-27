@@ -39,11 +39,12 @@ const Confirmation = () => {
     navigate("/step2");
   };
 
-  const handleSubmit = () => {
-axios.post("/submission",{data:{
+  const handleSubmit = async () => {
+const res = await axios.post("/submission",{data:{
   userData: personalDetails,
   addressData: addressDetails
 }})
+navigate(`/success?state=${res.state}&msg=${res.msg}`)
   }
 
   return (
