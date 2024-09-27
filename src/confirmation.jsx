@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import Card from './card';
-import Heading from './heading';
+import Card from './components/card';
+import Heading from './components/heading';
 import { useNavigate } from 'react-router-dom';
 
 const Confirmation = () => {

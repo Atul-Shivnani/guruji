@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { addressSchema } from "./zodSchemas/schemas";
-import Card from "./card";
-import Form from "./form";
-import Heading from "./heading";
+import Card from "./components/card";
+import Form from "./components/form";
+import Heading from "./components/heading";
 import { useNavigate } from "react-router-dom";
 import { State, City } from "country-state-city";
 

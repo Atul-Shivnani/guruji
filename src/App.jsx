@@ -2,7 +2,7 @@ import "./index.css";
 import Personal from "./personal";
 import { Routes, Route } from "react-router-dom";
 import Address from "./address";
-import Dots from "./dots";
+import Dots from "./components/dots";
 import { useLocation, useNavigate } from "react-router-dom";
 import Confirmation from "./confirmation";
 

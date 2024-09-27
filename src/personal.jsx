@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { personalSchema } from "./zodSchemas/schemas";
-import Card from "./card";
-import Form from "./form";
-import Heading from "./heading";
+import Card from "./components/card";
+import Form from "./components/form";
+import Heading from "./components/heading";
 
 const Personal = () => {
   const { pathname } = useLocation();
