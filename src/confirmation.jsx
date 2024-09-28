@@ -40,11 +40,12 @@ const Confirmation = () => {
   };
 
   const handleSubmit = async () => {
-const res = await axios.post("http://ec2-13-49-66-113.eu-north-1.compute.amazonaws.com:3001/submission",{data:{
+const res = await axios.post("http://ec2-13-49-66-113.eu-north-1.compute.amazonaws.com:3001/submission",{
   userData: personalDetails,
   addressData: addressDetails
-}})
-navigate(`/success?state=${res.state}&msg=${res.msg}`)
+})
+
+navigate(`/success?state=${res.data.state}&msg=${res.data.msg}`)
   }
 
   return (
