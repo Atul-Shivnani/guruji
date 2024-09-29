@@ -40,7 +40,7 @@ const Confirmation = () => {
   };
 
   const handleSubmit = async () => {
-const res = await axios.post("http://ec2-13-49-66-113.eu-north-1.compute.amazonaws.com:3001/submission",{
+const res = await axios.post("http://localhost:3001/submission",{
   userData: personalDetails,
   addressData: addressDetails
 })
