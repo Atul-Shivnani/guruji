@@ -44,7 +44,7 @@ const res = await axios.post("http://localhost:3001/submission",{
   userData: personalDetails,
   addressData: addressDetails
 })
-
+localStorage.removeItem("data");
 navigate(`/success?state=${res.data.state}&msg=${res.data.msg}`)
   }
 
